@@ -1,15 +1,64 @@
-.teaser-content {
+main .teaser-container {
+  margin-top: 120px;
+}
+main .teaser-container .teaser-content {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-.teaser-content .teaser-content-left {
+@media only screen and (max-width: 767px) {
+  main .teaser-container .teaser-content {
+    flex-direction: column;
+  }
+}
+main .teaser-container .teaser-content .teaser-content-left {
   width: 43%;
 }
-.teaser-content .teaser-content-left img {
-  width: 100%;
+@media only screen and (max-width: 767px) {
+  main .teaser-container .teaser-content .teaser-content-left {
+    width: 100%;
+  }
 }
-.teaser-content .teaser-content-right {
+main .teaser-container .teaser-content .teaser-content-left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .teaser-container .teaser-content .teaser-content-right {
   width: 57%;
   padding-left: 3%;
+}
+@media only screen and (max-width: 767px) {
+  main .teaser-container .teaser-content .teaser-content-right {
+    width: 100%;
+    padding: 0;
+  }
+}
+main .teaser-container .teaser-content .teaser-content-right h4 {
+  font-size: 14px;
+  color: #0068d7;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+main .teaser-container .teaser-content .teaser-content-right h3 {
+  font-size: 24px;
+  margin: 0;
+}
+main .teaser-container .teaser-content .teaser-content-right p {
+  margin-top: 30px;
+  font-size: 30px;
+  color: #757575;
+  letter-spacing: -1px;
+  line-height: 42px;
+  font-style: italic;
+}
+@media only screen and (max-width: 767px) {
+  main .teaser-container .teaser-content .teaser-content-right p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 15px;
+  }
 }/*# sourceMappingURL=teaser.css.map */

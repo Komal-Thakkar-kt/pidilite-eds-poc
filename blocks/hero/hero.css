@@ -61,3 +61,16 @@
     align-items: center;
     width: 100%;
 }
+
+@media only screen and (max-width: 767px) {
+  .hero , .hero img , .hero-container .hero-wrapper{
+    height: 180px;
+    min-height: 180px;
+    padding: 0;
+  }
+  
+  .hero .full-width h2 {
+    font-size: 24px;
+    position: relative;
+  }
+}
