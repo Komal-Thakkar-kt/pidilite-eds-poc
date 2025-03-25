@@ -1,0 +1,18 @@
+.teaser-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .teaser-content-left {
+        width: 43%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .teaser-content-right {
+        width: 57%;
+        padding-left: 3%;
+    }
+}

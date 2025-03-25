@@ -1,0 +1,15 @@
+.teaser-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teaser-content .teaser-content-left {
+  width: 43%;
+}
+.teaser-content .teaser-content-left img {
+  width: 100%;
+}
+.teaser-content .teaser-content-right {
+  width: 57%;
+  padding-left: 3%;
+}/*# sourceMappingURL=teaser.css.map */
