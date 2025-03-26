@@ -1,4 +1,5 @@
 import createField from './form-fields.js';
+import decorateCustomForm from './custom-form-changes.js';
 
 async function createForm(formHref, submitHref) {
   const { pathname } = new URL(formHref);
@@ -85,6 +86,7 @@ export default async function decorate(block) {
 
   const form = await createForm(formLink, submitLink);
   block.replaceChildren(form);
+  decorateCustomForm();
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
