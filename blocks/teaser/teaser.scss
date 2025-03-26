@@ -1,6 +1,11 @@
 main{
     .teaser-container {
         margin-top: 120px;
+
+        @media only screen and (max-width: 767px) {
+            margin-top: 60px;
+        }
+
         .teaser-content {
             display: flex;
             justify-content: center;
@@ -41,11 +46,13 @@ main{
                     font-weight: 600;
                     margin-bottom: 10px;
                     margin-top: 0;
+                    font-family: futura-pt-bold;
                 }
 
                 h3{
                     font-size: 24px;
                     margin: 0;
+                    font-family: futura-pt-bold;
                 }
 
                 p{
@@ -55,9 +62,10 @@ main{
                     letter-spacing: -1px;
                     line-height: 42px;
                     font-style: italic;
+                    font-family: futura-pt;
 
                     @media only screen and (max-width: 767px) {
-                        font-size: 14px;
+                        font-size: 16px;
                         line-height: 1.8;
                         margin-top: 15px;
                     }
