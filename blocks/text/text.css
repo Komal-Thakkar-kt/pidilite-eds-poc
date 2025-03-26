@@ -4,6 +4,9 @@
   font-size: 18px;
   font-family: futura-pt;
 }
+.text-content-wrapper p a {
+  color: #000;
+}
 .text-content-wrapper ul {
   padding-left: 30px;
 }
