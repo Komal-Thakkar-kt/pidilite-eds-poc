@@ -1,5 +1,6 @@
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
+import decorateBreadcrumb from '../breadcrumb/breadcrumb.js';
 
 /**
  * loads and decorates the footer
@@ -17,4 +18,6 @@ export default async function decorate(block) {
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
 
   block.append(footer);
+
+  decorateBreadcrumb();
 }
