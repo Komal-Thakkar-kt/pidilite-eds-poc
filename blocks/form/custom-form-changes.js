@@ -1,4 +1,4 @@
-export default function decorateCustomForm(block) {
+export default function decorateCustomForm() {
 
   const formEle = document.querySelector('form');
   formEle.setAttribute('class', 'form-element');
@@ -16,7 +16,7 @@ export default function decorateCustomForm(block) {
 
   const checkboxWrapper = document.querySelector('.checkbox-wrapper');
   const formWrapper = document.querySelector('.form-element');
-  
+
   formWrapper.insertBefore(textFieldParentWrapper, checkboxWrapper);
 
   return formWrapper;
