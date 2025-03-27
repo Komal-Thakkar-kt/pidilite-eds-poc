@@ -82,6 +82,18 @@ footer .section ul {
     row-gap: 20px;
 }
 
+.footer a {
+    color: #b1b1b1;
+    line-height: 28px;
+    font-size: 16px;
+    font-family: futura-pt, sans-serif;
+}
+
+.footer a:hover {
+    color: #ffde00;
+    text-decoration: none;
+}
+
 .copyright-container {
     grid-column: 1 / -1; /* Make the copyright span all columns */
 }
@@ -118,18 +130,6 @@ footer .section ul {
     color: #fff;
 }
 
-.footer a {
-    color: #b1b1b1;
-    line-height: 28px;
-    font-size: 16px;
-    font-family: futura-pt, sans-serif;
-}
-
-.footer a:hover {
-    color: #ffde00;
-    text-decoration: none;
-}
-
 .footer .section .contact-wrapper p:last-child a {
     color: unset;
 }
@@ -144,7 +144,7 @@ footer .section ul {
     footer .footer > div {
         gap: 25px;
         grid-template-columns: 1fr;
-        padding: 20px 10px 10px 10px;
+        padding: 20px 10px 10px;
     }
 
     .footer .footer-bottom-strip-container ul {
