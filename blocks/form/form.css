@@ -314,13 +314,10 @@
     padding-bottom: 4px;
     letter-spacing: 0.89px;
     background-color: #808080;
-    -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    -webkit-transform: translateZ(0);
     border-radius: 0;
     font-family: futura-pt, sans-serif;
     transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     box-shadow: 1px 30px 35px -19px rgba(0, 0, 0, 36%);
     max-width: unset;
