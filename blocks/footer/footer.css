@@ -134,9 +134,9 @@ footer .section ul{
 }
 
 @media (width >= 900px) {
-  footer .footer > div {
+  /* footer .footer > div {
     padding: 40px 0 0;
-  }
+  } */
 }
 
 @media only screen and (min-width: 480px) and (max-width:768px){
