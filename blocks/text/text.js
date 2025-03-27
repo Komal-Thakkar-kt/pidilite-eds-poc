@@ -3,7 +3,6 @@ export default function decorateText(block) {
         ele.classList.add('text-content');
         var childEle = document.querySelectorAll('.text-content');
         Array.from(childEle).forEach(function(ele) {
-            console.log(ele.children);
             ele.children[0].classList.add('text-content-wrapper');
         })
     })

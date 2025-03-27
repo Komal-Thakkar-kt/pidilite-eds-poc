@@ -1,7 +1,6 @@
 export default function decorateCustomForm(block) {
 
   const formEle = document.querySelector('form');
-  console.log('formEle', formEle);
   formEle.setAttribute('class', 'form-element');
 
   const personFieldWrapper = document.querySelector('.personName.field-wrapper.text-wrapper');
