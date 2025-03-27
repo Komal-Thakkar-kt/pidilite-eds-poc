@@ -46,12 +46,12 @@ main .teaser-container .teaser-content .teaser-content-right h4 {
   font-weight: 600;
   margin-bottom: 10px;
   margin-top: 0;
-  font-family: futura-pt-bold;
+  font-family: futura-pt-bold, sans-serif;
 }
 main .teaser-container .teaser-content .teaser-content-right h3 {
   font-size: 24px;
   margin: 0;
-  font-family: futura-pt-bold;
+  font-family: futura-pt-bold, sans-serif;
 }
 main .teaser-container .teaser-content .teaser-content-right p {
   margin-top: 30px;
@@ -60,7 +60,7 @@ main .teaser-container .teaser-content .teaser-content-right p {
   letter-spacing: -1px;
   line-height: 42px;
   font-style: italic;
-  font-family: futura-pt;
+  font-family: futura-pt, sans-serif;
 }
 @media (width <= 767px) {
   main .teaser-container .teaser-content .teaser-content-right p {
