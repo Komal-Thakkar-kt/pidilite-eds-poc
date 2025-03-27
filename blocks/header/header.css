@@ -368,7 +368,7 @@ header nav .nav-sections ul li > a{
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  font-family: futura-pt;
+  font-family: futura-pt, sans-serif;
   font-weight: 600;
   -webkit-transition: all .3s;
   text-decoration: none;
@@ -458,7 +458,7 @@ header nav .nav-sections .mobile-view-hide-wrapper .button-container a{
   color: #fff;
   letter-spacing: 1.3px;
   font-weight: 600;
-  font-family: futura-pt;
+  font-family: futura-pt, sans-serif;
 }
 
 header nav .nav-sections .mobile-view-hide-wrapper p{
@@ -470,7 +470,7 @@ header nav .nav-sections .mobile-view-hide-wrapper p{
   text-align: center;
   -webkit-transition: all .3s;
   transition: all .3s;
-  font-family: futura-pt;
+  font-family: futura-pt, sans-serif;
 }
 
 header nav .nav-sections .mobile-view-hide-wrapper:last-child .block > div{

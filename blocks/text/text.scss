@@ -3,7 +3,7 @@
     margin: 0;
     margin-bottom: 20px;
     font-size: 18px;
-    font-family: futura-pt;
+    font-family: futura-pt, sans-serif;
 
     a {
       color: #000;
@@ -15,7 +15,7 @@
     li {
       list-style: disc;
       margin-bottom: 5px;
-      font-family: futura-pt-bold;
+      font-family: futura-pt-bold, sans-serif;
     }
   }
 
@@ -24,7 +24,7 @@
     color: #000;
     letter-spacing: 0.2px;
     margin: 20px 0px;
-    font-family: futura-pt-bold;
+    font-family: futura-pt-bold, sans-serif;
   }
 }
 
@@ -32,7 +32,7 @@
   .text-content-wrapper {
     ul {
       li {
-        font-family: futura-pt;
+        font-family: futura-pt, sans-serif;
         font-size: 18px;
         line-height: 28px;
         margin-bottom: 20px;
