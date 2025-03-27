@@ -1,5 +1,4 @@
-export default function decorateCustomForm(){
-
+export default function decorateCustomForm() {
   const formEle = document.querySelector('form');
   formEle.setAttribute('class', 'form-element');
 
