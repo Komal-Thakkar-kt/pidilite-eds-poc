@@ -209,7 +209,7 @@
     transform: translateX(24px);
 }
 
- /* custom Css start*/
+ /* custom Css start */
 .form-container {
     background-color: #f6f6f6;
 }
@@ -326,7 +326,7 @@
     font-family: futura-pt, sans-serif;
     transform: translateZ(0);
     backface-visibility: hidden;
-    box-shadow: 1px 30px 35px -19px rgb(0, 0, 0, 36%);
+    box-shadow: 1px 30px 35px -19px rgb(0 0 0 / 0.36);
     max-width: unset;
     line-height: normal;
 }
