@@ -489,7 +489,7 @@ header nav .nav-sections .mobile-view-hide-wrapper:last-child .block > div{
   justify-content: center;
 }
 
-@media only screen and (max-width: 1024px) {
+@media (width <= 1024px) {
   header nav{
     display: flex;
     justify-content: space-between;
