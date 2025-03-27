@@ -1,4 +1,4 @@
-export default function decorateBreadcrumb(block) {
+export default function decorateBreadcrumb() {
 	const sourceWrapper = document.querySelector('.nav-wrapper');
 	const childElement = document.querySelector('.breadcrumbs');
 	const removedChild = sourceWrapper.removeChild(childElement);
