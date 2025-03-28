@@ -172,6 +172,35 @@ header nav[aria-expanded='true'] .nav-sections {
   height: 100%;
 }
 
+header nav .nav-sections .default-content-wrapper p{
+  position: relative;
+}
+
+header nav .nav-sections .default-content-wrapper span{
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+header nav .nav-sections .default-content-wrapper input{
+  outline: 0;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  line-height: 28px;
+  padding: 6px 40px 7px 20px;
+  background: rgb(255 255 255 / 35%);
+  border-radius: 20.3px;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: futura-pt,sans-serif;
+  text-transform: uppercase;
+}
+
+
+header nav .nav-sections .default-content-wrapper input::-webkit-input-placeholder {
+  color: #fff;
+}
 header nav .nav-sections ul {
   list-style: none;
   padding-left: 0;
@@ -345,6 +374,7 @@ header{
 
 header nav[aria-expanded='true'] .nav-sections .default-content-wrapper{
   display: flex;
+  align-items: center;
 }
 
 header nav .nav-sections ul li > a{
