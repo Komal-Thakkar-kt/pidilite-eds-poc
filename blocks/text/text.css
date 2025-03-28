@@ -1,0 +1,39 @@
+.text-content-wrapper p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: futura-pt, sans-serif;
+}
+
+.text-content-wrapper p a {
+  color: #000;
+}
+
+.text-content-wrapper p a:hover {
+  text-decoration: none;
+}
+
+.text-content-wrapper ul {
+  padding-left: 30px;
+}
+
+.text-content-wrapper ul li {
+  list-style: disc;
+  margin-bottom: 5px;
+  font-family: futura-pt-bold, sans-serif;
+}
+
+.text-content-wrapper h2 {
+  font-size: 24px;
+  color: #000;
+  letter-spacing: 0.2px;
+  margin: 20px 0;
+  font-family: futura-pt-bold, sans-serif;
+}
+
+.faqs-container .text-content-wrapper ul li {
+  font-family: futura-pt, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}

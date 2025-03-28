@@ -75,7 +75,7 @@ body {
   margin: 0;
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: var(--body-font-family);
+  font-family: futura-pt, sans-serif;
   font-size: var(--body-font-size-m);
   line-height: 1.6;
 }
@@ -255,3 +255,4 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
