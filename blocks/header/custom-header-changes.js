@@ -7,10 +7,10 @@ export default function decorateSearch() {
 
 const bodyElements = document.getElementsByTagName('body');
 const body = bodyElements[0];
-window.addEventListener('scroll', function(){
+window.addEventListener('scroll', (() => {
   if (window.scrollY > 0) {
     body.classList.add('scrolled');
-  }else{
+  } else {
     body.classList.remove('scrolled');
   }
-});
+}));
