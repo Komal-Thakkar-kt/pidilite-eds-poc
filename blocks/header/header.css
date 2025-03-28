@@ -1,15 +1,17 @@
-@import '../breadcrumb/breadcrumb.css';
+@import url('../breadcrumb/breadcrumb.css');
 
-body.scrolled header .nav-wrapper{
-  background-color: #000;
-  transition: all .5s;
-}
+
 /* header and nav layout */
 header .nav-wrapper {
   background-color: transparent;
   width: 100%;
   z-index: 2;
   position: fixed;
+}
+
+body.scrolled header .nav-wrapper{
+  background-color: #000;
+  transition: all .5s;
 }
 
 header nav {
@@ -198,9 +200,10 @@ header nav .nav-sections .default-content-wrapper input{
 }
 
 
-header nav .nav-sections .default-content-wrapper input::-webkit-input-placeholder {
+header nav .nav-sections .default-content-wrapper input::placeholder {
   color: #fff;
 }
+
 header nav .nav-sections ul {
   list-style: none;
   padding-left: 0;
@@ -598,8 +601,8 @@ header nav .nav-brand .icon-white-search-icon{
 
   .desktop-view-hide-container .desktop-view-hide-wrapper .desktop-view-hide ul li{
     display: block;
-    padding: 0 0 20px 0;
-    margin: 0 0 20px 0;
+    padding: 0 0 20px;
+    margin: 0 0 20px;
     border-bottom: 1px solid #dacfcf;
     line-height: 16px;
   }
@@ -614,10 +617,12 @@ header nav .nav-brand .icon-white-search-icon{
     font-family: futura-pt-bold, sans-serif;
     transition: all .3s;
   }
+  
   .desktop-view-hide-container .desktop-view-hide-wrapper .desktop-view-hide ul li ul{
     display: block;
-    margin: 10px 0 0 0;
+    margin: 10px 0 0 ;
   }
+
   .desktop-view-hide-container .desktop-view-hide-wrapper .desktop-view-hide ul li ul li{
     border-bottom: none;
     padding-bottom: 10px;
