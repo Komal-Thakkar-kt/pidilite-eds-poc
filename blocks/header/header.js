@@ -244,13 +244,3 @@ export default async function decorate(block) {
 
   decorateSearch();
 }
-
-const bodyElements = document.getElementsByTagName('body');
-const body = bodyElements[0];
-window.addEventListener('scroll', function(){
-  if (window.scrollY > 0) {
-    body.classList.add('scrolled');
-  }else{
-    body.classList.remove('scrolled');
-  }
-});
