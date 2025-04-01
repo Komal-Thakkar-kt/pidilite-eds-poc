@@ -1,6 +1,5 @@
 export default async function decorateSearch() {
-
-  const isMobile = () => window.matchMedia("(max-width: 767px)").matches;
+  const isMobile = () => window.matchMedia('(max-width: 767px)').matches;
   if (isMobile()) {
     const navWrapper = document.querySelector('.nav-wrapper');
     const navSearchInputHTML = `
@@ -24,7 +23,7 @@ export default async function decorateSearch() {
     inputElement.setAttribute('type', 'text');
     inputElement.setAttribute('placeholder', 'SEARCH');
     searchWrapper.appendChild(inputElement);
-  } 
+  }
 }
 
 const bodyElements = document.getElementsByTagName('body');
