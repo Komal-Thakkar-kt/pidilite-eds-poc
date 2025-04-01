@@ -523,6 +523,31 @@ header nav .nav-brand .icon-white-search-icon{
     background-color: #000;
   }
 
+  header .nav-wrapper .search-input-wrapper{
+    display: none;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  header .nav-wrapper .search-input-wrapper.active{
+    display: block;
+  }
+
+  header .nav-wrapper .search-input-wrapper input{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid;
+    outline: none;
+  }
+
+  header .nav-wrapper .search-input-wrapper img{
+    position: absolute;
+    right: 40px;
+    top: 20px;
+  }
+
   header nav[aria-expanded='true']{
     min-height: max-content;
     overflow: unset;
@@ -559,6 +584,7 @@ header nav .nav-brand .icon-white-search-icon{
 
   header nav .nav-brand .icon-white-search-icon img{
     width: 24px;
+    cursor: pointer;
   }
 
   header nav[aria-expanded='true'] .desktop-view-hide-container{
@@ -617,7 +643,7 @@ header nav .nav-brand .icon-white-search-icon{
     font-family: futura-pt-bold, sans-serif;
     transition: all .3s;
   }
-  
+
   .desktop-view-hide-container .desktop-view-hide-wrapper .desktop-view-hide ul li ul{
     display: block;
     margin: 10px 0 0 ;
