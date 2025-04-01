@@ -1,5 +1,6 @@
 import { fetchPlaceholders, getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
+import decorateBreadcrumb from '../breadcrumb/breadcrumb.js';
 import decorateSearch from './custom-header-changes.js';
 
 // media query match that indicates mobile/tablet width
@@ -243,4 +244,5 @@ export default async function decorate(block) {
   }
 
   decorateSearch();
+  decorateBreadcrumb();
 }
