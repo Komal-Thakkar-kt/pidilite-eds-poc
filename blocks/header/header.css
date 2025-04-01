@@ -542,6 +542,10 @@ header nav .nav-brand .icon-white-search-icon{
     outline: none;
   }
 
+  header nav .nav-brand img{
+    width: 100px;
+  }
+
   header .nav-wrapper .search-input-wrapper img{
     position: absolute;
     right: 40px;
@@ -572,10 +576,6 @@ header nav .nav-brand .icon-white-search-icon{
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  header nav .nav-brand img{
-    width: 100px;
   }
 
   header nav .nav-brand .icon-white-search-icon{
