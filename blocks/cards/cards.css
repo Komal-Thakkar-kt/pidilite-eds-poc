@@ -7,10 +7,18 @@
   grid-gap: 24px;
 }
 
+.cards.featured-segments > ul{
+  display: block;
+}
+
 .cards > ul > li {
   border: 1px solid #dadada;
   background-color: var(--background-color);
 }
+
+/* .cards.featured-segments > ul > li{
+  border: none;
+} */
 
 .cards .cards-card-body {
   margin: 16px;

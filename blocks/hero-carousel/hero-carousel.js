@@ -25,8 +25,12 @@ export default function decorateCarousel(block) {
       clickable: true
       // dynamicBullets: true,
     },
+    effect: 'fade', // Enable the fade effect
+      fadeEffect: {
+        crossFade: true // Optional: Enable crossfade for smoother transition
+    },
     // wrapperClass:"swiper-wrapper",
-    // loop: true,
+    loop: true,
   });
 
   // Swiper(block,swiper);
