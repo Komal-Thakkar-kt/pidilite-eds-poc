@@ -81,11 +81,6 @@ main>.section>.hero-carousel-wrapper {
     border: none;
 }
 
-.hero-carousel-wrapper .swiper-slide .button-container .icon-red-arrow {
-    width: 36px;
-    height: 36px;
-}
-
 .hero-carousel-wrapper .swiper-pagination-bullet {
     background: linear-gradient(to bottom, #cccccc 0%, #cccccc 100%);
     border: 3px solid #cccccc;
@@ -127,7 +122,7 @@ main>.section>.hero-carousel-wrapper {
     }
 
     .hero-carousel-wrapper .swiper-slide .button-container .icon-red-arrow {
-        width: 24ox;
+        width: 24px;
         height: 24px;
     }
 }

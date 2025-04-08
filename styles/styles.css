@@ -222,6 +222,11 @@ main img {
   width: 24px;
 }
 
+.icon.icon-red-arrow{
+  width: 36px;
+  height: 36px;
+}
+
 .icon img {
   height: 100%;
   width: 100%;

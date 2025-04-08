@@ -1,7 +1,7 @@
 .hero-container .hero-wrapper {
     max-width: unset;
     padding: 0;
-    height: 300px;
+    /* height: 300px; */
     position: relative;
 }
 
@@ -73,9 +73,14 @@
 
 @media (width <= 767px) {
     .hero,
-    .hero img,
-    .hero-container .hero-wrapper {
+    .hero img {
         height: 180px;
+        min-height: 180px;
+        padding: 0;
+    }
+
+    .hero-container .hero-wrapper {
+        /* height: 180px; */
         min-height: 180px;
         padding: 0;
     }
@@ -86,5 +91,132 @@
         width: auto;
         transform: translate(-50%, 15px);
         padding: 0 15px;
+    }
+}
+
+.hero.common-banner{
+    height: auto;
+    min-height: 580px;
+}
+
+.hero.common-banner .full-width:last-child{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 550px;
+    position: absolute;
+    transform: translate(50%);
+    left: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+.hero.common-banner .full-width h3{
+    margin: 0 0 20px;
+    padding: 0 0 10px 0;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #194F90;
+    color: #194F90;
+    font-family: "Raleway", Sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+
+.hero.common-banner .full-width h2{
+    position: relative;
+    background:unset;
+    left: unset;
+    top: unset;
+    transform: unset;
+    display: block;
+    text-align: left;
+    color: #194F90;
+    font-family: "Raleway", Sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0;
+    padding: 0 0 10px 0;
+    border-style: solid;
+    border-width: 0 0 5px 0;
+    border-color: #194F90;
+    margin-bottom: 20px;
+}
+
+.hero.common-banner .full-width p{
+    color: #767676;
+    font-family: "Raleway", Sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin: 0 0 20px;
+}
+
+.hero.common-banner .full-width .button-container{
+    margin: 0;
+    padding: 0;
+    height: 36px;
+}
+
+.hero.common-banner .full-width .button-container a{
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 36px;
+    height: 36px;
+}
+
+.hero.technical-banner .full-width:last-child{
+    position: absolute;
+    height: 100%;
+    transform: unset;
+    left: unset;
+    right: 19%;
+}
+
+@media (width <= 767px) {
+    .hero.common-banner{
+        display: flex;
+        justify-content: center;
+        min-height: unset;
+        padding: 60px 0;
+    }
+
+    .hero.common-banner img{
+        height: 100%;
+        min-height: unset;
+    }
+
+    .hero.common-banner .full-width:last-child{
+        position: relative;
+        transform: unset;
+        left: unset;
+    }
+
+    .hero.common-banner .full-width:last-child h3,
+    .hero.common-banner .full-width:last-child h2,
+    .hero.common-banner .full-width:last-child p{
+        margin: 0 10px 20px;
+    }
+
+    .hero.technical-banner .full-width:last-child{
+        right: unset;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1280px){
+    .hero.common-banner .full-width:last-child{
+        transform: unset;
+        left: 2.5%;
+    }
+
+    .hero.technical-banner .full-width:last-child{
+        right: 2.5%;
+        left: unset;
     }
 }
