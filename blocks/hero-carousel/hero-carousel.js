@@ -26,7 +26,7 @@ export default function decorateCarousel(block) {
     },
     effect: 'fade', // Enable the fade effect
     fadeEffect: {
-     crossFade: true, // Optional: Enable crossfade for smoother transition
+    crossFade: true, // Optional: Enable crossfade for smoother transition
     },
     // wrapperClass:"swiper-wrapper",
     loop: true,
