@@ -35,3 +35,23 @@ window.addEventListener('scroll', (() => {
     body.classList.remove('scrolled');
   }
 }));
+
+const headerName = document.querySelector('meta[name="headername"]');
+const footerName = document.querySelector('meta[name="footername"]')
+let headerNameValue = '';
+let footerNameValue = ''
+if (headerName) {
+  headerNameValue = headerName.getAttribute('content');
+}
+if (footerName){
+  footerNameValue = footerName.getAttribute('content');
+}
+
+const header = document.querySelector('header');
+const footer = document.querySelector('footer');
+if (header || footer || headerNameValue || footerNameValue) {
+  header.classList.add(headerNameValue);
+  footer.classList.add(footerNameValue);
+} else {
+  console.log('Meta tag or target div not found.');
+}

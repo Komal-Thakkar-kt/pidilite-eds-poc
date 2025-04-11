@@ -1,6 +1,48 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
+
+function initFeaturedSegments(block) {
+  const segmentsBlock = block;
+  
+  block.querySelectorAll('li:has(> ul)').forEach((trigger) => {
+    const nestedUl = trigger.querySelector('ul');
+    trigger.classList.add('segments-trigger');
+    nestedUl.classList.add('segments-dropdown');
+    nestedUl.style.display = 'none';
+
+    // Click handler for the trigger
+    const handleTriggerClick = (e) => {
+      e.stopPropagation();
+      trigger.classList.toggle('active');
+      nestedUl.style.display = trigger.classList.contains('active') ? 'block' : 'none';
+    };
+
+    // Close when clicking outside
+    const handleDocumentClick = (e) => {
+      if (!segmentsBlock.contains(e.target)) {
+        trigger.classList.remove('active');
+        nestedUl.style.display = 'none';
+      }
+    };
+
+    trigger.addEventListener('click', handleTriggerClick);
+    document.addEventListener('click', handleDocumentClick);
+
+    // Cleanup event listeners when block is removed
+    block.addEventListener('DOMNodeRemoved', () => {
+      trigger.removeEventListener('click', handleTriggerClick);
+      document.removeEventListener('click', handleDocumentClick);
+    });
+  });
+}
+
 export default function decorate(block) {
+
+  // Initialize featured segments functionality if applicable
+  if (block.classList.contains('featured-segments')) {
+    initFeaturedSegments(block);
+  }
+
   // Convert to UL/LI structure
   const ul = document.createElement('ul');
 

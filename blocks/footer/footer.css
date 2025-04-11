@@ -176,3 +176,108 @@ footer .section ul {
           grid-template-columns: 1fr 1fr;
       }
 }
+
+/* cipy footer start */
+.footer-wrapper.cipy-footer{
+    background-color: #f7f7f7;
+}
+
+.cipy-footer .footer > div{ 
+    display: block;
+}
+
+.cipy-footer .text-container .specialization{
+    display: flex;
+    gap: 20px;
+}
+
+.cipy-footer .text-container .specialization .text-content-1{
+    width: 50%;
+}
+
+.cipy-footer .text-container .specialization .text-content-1 p{
+    margin-bottom: 20px;
+}
+
+.cipy-footer .text-container .specialization .text-content-1 p:last-child{
+    margin-bottom: 0;
+}
+
+.cipy-footer .text-container .specialization .text-content-2,
+.cipy-footer .text-container .specialization .text-content-3,
+.cipy-footer .text-container .specialization .text-content-4{
+    width: 16%;
+}
+
+.cipy-footer .text-container .specialization h4{
+    color: #194F90;
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15.4px;
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: #194F90;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.cipy-footer .text-container .specialization .text-content p{
+    color: #727272;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+.cipy-footer .text-container .specialization .text-content ul{
+    flex-direction: column;
+}
+
+.cipy-footer .text-container .specialization .text-content ul li a{
+    font-family: Raleway, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 28px;
+    color:rgb(0, 0, 238);
+}
+
+.cipy-footer .text-container .specialization .text-content-4 .button-container a{ 
+    background-color: transparent;
+    color: #194F90;
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 15.4px;
+    padding: 0;
+    margin: 0 0 10px;
+    width: 100%;
+    text-align: left;
+    border-radius: unset;
+}
+
+.cipy-footer .text-container .specialization .text-content-4 .button-container:first-child{
+    margin-top: 0.8em;
+    margin-bottom: 10px;
+}
+
+.cipy-footer .text-container .specialization .text-content-4 .button-container a:first-child{
+    padding: 0 0 15px;
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: #194F90;
+}
+
+@media (360px <= width <= 768px){
+    .cipy-footer .text-container .specialization{
+        display: block;
+    }
+
+    .cipy-footer .text-container .specialization .text-content-1,
+    .cipy-footer .text-container .specialization .text-content-2,
+    .cipy-footer .text-container .specialization .text-content-3,
+    .cipy-footer .text-container .specialization .text-content-4{
+        width: 100%;
+    }
+}
+/* cipy-footer end */

@@ -69,6 +69,7 @@ main>.section>.hero-carousel-wrapper {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    max-height: 580px;
 }
 
 .hero-carousel-wrapper .swiper-slide .button-container {
